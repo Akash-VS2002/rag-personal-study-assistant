@@ -148,23 +148,7 @@ rag_study_assistant/
     └── rag_chain.py                # v1 reference: plain LangChain chain, no persistence
 ```
 
-## Pushing to GitHub
 
-```bash
-git init
-git add .
-git commit -m "Initial commit: RAG study assistant with LangGraph memory"
-git branch -M main
-git remote add origin https://github.com/<your-username>/<repo-name>.git
-git push -u origin main
-```
-
-Before your first commit, double check secrets aren't staged:
-
-```bash
-git status
-# .env should NOT appear in the list of files to be committed
-```
 
 ## Possible next steps (v2 ideas)
 
