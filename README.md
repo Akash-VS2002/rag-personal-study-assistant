@@ -161,12 +161,4 @@ rag_study_assistant/
 * Deploy the backend as a **FastAPI** service and keep Streamlit (or
   swap in a React frontend) as a thin client.
 
-## Interview talking points
 
-* Why local embeddings + hosted LLM: cost/latency tradeoff.
-* Why `RecursiveCharacterTextSplitter` with overlap: preserves context
-  across chunk boundaries so answers aren't cut off mid-thought.
-* Why Chroma over FAISS here: simpler persistence API, metadata
-  filtering support, good for a single-machine app like this.
-* How retrieval-grounding + a "say you don't know" instruction in the
-  prompt reduces hallucination risk.
